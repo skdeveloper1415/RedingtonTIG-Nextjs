@@ -1,0 +1,29 @@
+#viz_container text {
+    fill: var(--is-text) !important;
+    font-size: 16px !important;
+    transform: translateY(-16px);
+}
+.vz-weighted_tree-node-plot .vz-weighted_tree-node-circle text{
+    font-size: 21px !important;
+}
+.vz-weighted_tree-node-plot .vz-weighted_tree-node-circle text :hover {
+    font-size: 21px !important;
+    font-weight: 500 !important;
+}
+#viz_container {
+    /* transform: translateY(-20%); */
+    height: 100% !important;
+}
+.vizuly.vz-weighted_tree-viz{
+    background-color:var(--is-theme-bg);
+    min-height: 50vh;
+    width: 100% !important;
+}
+.vz-background{
+    background-color:var(--is-theme-bg) !important;
+}
+/* div .vz-weighted_tree-viz{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+} */

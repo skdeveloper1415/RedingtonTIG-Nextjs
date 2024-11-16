@@ -1,0 +1,105 @@
+nav ul li a { display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 0.729vw; text-align: center; margin-bottom: 1.250vw; }
+nav ul li a:not(:last-child){ margin-bottom: 1.250vw; }
+nav ul li a .icon { display: flex; align-items: center; justify-content: center; background-color: #EEF8F4; color: #80C7A2; border-radius: 4px; width: 2.500vw; height: 2.500vw; font-size: 1.250vw; margin-bottom: 5px; }
+.dark nav ul li a .icon { background-color: #202123; color: #606367;}
+nav ul li a:hover{ color: #667085; }
+.dark ul li a:hover{ color: white; }
+nav ul li a:hover .icon{ background-color: #4FB155; color: white; }
+nav ul li a.active .icon{ background-color: #4FB155; color: white; }
+.dark ul li a.active{ color: white; }
+
+header .p-divider-vertical, header .p-divider.p-divider-vertical { margin: 0; }
+header .p-divider.p-divider-vertical:before { border-color: #4B5255; }
+header .p-divider.p-divider-vertical { padding: 5px 0; }
+header .p-inputtext { background-color: #F1F0F0; border: none; border-radius: 0.417vw; min-width: 20.313vw; color: #888888; padding: 0.521vw 0.729vw; }
+header .p-input-icon-left > i:first-of-type, header .p-input-icon-left > svg:first-of-type, header .p-input-icon-left > .p-input-prefix { color: #888888; }
+header .p-inputtext:enabled:focus { box-shadow: none; }
+.headerProfile li { font-size: 0.833vw; color: #344054; }
+.headerProfile li i { font-size: 0.938vw; margin-right: 0.521vw; }
+.headerProfile li { display: block; margin-top: 0.781vw; }
+
+.boxBlock { box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.10); background: #FFFFFF; border: 1px solid #FFFFFF; border-radius: 8px; }
+.boxBlock.active{ background: #002B11; position: relative; }
+
+.boxBlock.active .colorWhite { color: white; }
+.boxBlock.active .colorGreen { color: #4DB17D; }
+.boxBlock.active .bgColorGreen { background-color: #649A4A; }
+.boxBlock.active .noColor { color: #4DB17D; }
+
+.backlog-icon, .inventory-icon, .backlogInventory, .booking { padding-right: 1.563vw; }
+.backlog-icon:before { content: ""; position: absolute; left: 0; top: -11px; background: no-repeat url("/assets/images/svg/backlog-icon.svg"); width: 48px; height: 44px; }
+.boxBlock.active .backlog-icon.active:before { background: url("/assets/images/svg/backlog-icon-active.svg"); }
+.inventory-icon:before { content: ""; position: absolute; left: 0; top: -14px; background: no-repeat url("/assets/images/svg/inventory-icon.svg"); width: 49px; height: 49px; }
+.boxBlock.active .inventory-icon.active:before { background: no-repeat url("/assets/images/svg/inventory-icon-active.svg"); }
+.backlogInventory:before { content: ""; position: absolute; left: 0; top: -14px; background: no-repeat url("/assets/images/svg/backlogInventory.svg"); width: 48px; height: 49px; }
+.boxBlock.active .backlogInventory.active:before { background: no-repeat url("/assets/images/svg/backlogInventory-active.svg"); }
+.booking:before { content: ""; position: absolute; left: 0; top: -14px; background: no-repeat url("/assets/images/svg/booking.svg"); width: 49px; height: 48px; }
+.boxBlock.active .booking.active:before { background: no-repeat url("/assets/images/svg/booking-active.svg"); }
+.boxBlock.active::before { content: ""; position: absolute; left: 0; top: 0; background: url("/assets/images/activeBg.png"); width: 390px; height: 100%; }
+
+.custTabs .react-tabs__tab:focus:after { display: none; }
+.custTabs .react-tabs__tab { color: #222222; font-weight: 500; bottom: 0; }
+.custTabs .react-tabs__tab--selected { background: transparent; border: none; border-bottom: 2px solid #4FB155; color: #4FB155 !important; font-weight: normal; }
+.tabList li { position: relative; color: #222222; padding: 5px 30px; }
+.tabList li:not(:first-child) { margin-top: 10px; border-top: 1px dashed #344054; }
+.tabList li:before { content: "\e91c"; font-family: 'red-digitsg'; position: absolute; left: 0; top: 6px; }
+
+.custmDrop .p-dropdown { background-color: #27272A; border-color: #344054; }
+.custmDrop .p-inputtext { padding: 5px; font-size: 14px; }
+.custmDrop .p-dropdown .p-dropdown-trigger { width: 1.5rem; }
+.custmDrop .pi-chevron-down:before { font-size: 12px; }
+
+.echartleft-text { transform: rotate(270deg); top: 44%; left: -6%; font-weight: 400; font-size: 12px; color: #555555; }
+.dark .echartleft-text {color: #CACED1; }
+.echartbottom-text { bottom: 2%; left: 42%; font-weight: 400; font-size: 12px; color: #555555; }
+.dark .echartbottom-text {color: #CACED1; }
+.echartTabs .react-tabs__tab-list{ border: 1px solid #DDE8ED; color: #363A44; background-color: #F9F7F4; border-radius: 4px; overflow: hidden; display: flex; justify-content: end; width: fit-content; margin: 0 0 0 auto; box-shadow: 0px 0px 0px 0px #0033A0; }
+.echartTabs .react-tabs__tab { color: #363A44; border: none; font-size: 0.573vw; font-weight: 500; }
+.echartTabs .react-tabs__tab--selected { border-radius: 0; background-color: #363A44; color: #FFFFFF; }
+.echartTabs .react-tabs__tab:hover { background-color: #363A44; color: #FFFFFF; }
+.echartTabs .react-tabs__tab:focus:after { display: none; }
+
+
+ .p-sidebar-header{
+    display: none !important
+ }
+
+.cust-select2.cust-select2-gauge .p-dropdown .p-dropdown-label.p-placeholder, .cust-select2.cust-select2-gauge .p-dropdown .p-dropdown-label { padding: 25px 0.469vw 0.525vw; }
+.rightCopt [class*="mr-"] { margin-right: 0; }
+
+/* dark mode */
+.dark .custTabs .react-tabs__tab { color: #7F7F89; }
+.dark .boxBlock.active{ background: #41733D; position: relative; }
+.dark .boxBlock { box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.10); background: linear-gradient(46deg, #0F1013 0%, #16181E 100%); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; }
+.dark .tabList li { color: #C2C3C3;}
+.dark .echartleft-text {color: #CACED1; }
+.dark .echartbottom-text { color: #CACED1; }
+.dark .echartTabs .react-tabs__tab-list{border: 1px solid #272F31; color: #CACED1; background-color: #272F31;}
+.dark .echartTabs .react-tabs__tab { color: #CACED1;}
+.dark .echartTabs .react-tabs__tab--selected {background-color: #586C5D; }
+.dark .echartTabs .react-tabs__tab:hover { background-color: #586C5D; }
+.dark header .p-inputtext { background-color: #1D2426; }
+
+#echartWrap { height: 400px; }
+.echartHeight #echartWrap { height: 80vh; }
+
+@media only screen and (max-width: 1280px) {
+    nav ul li a { font-size: 14px; margin-bottom: 24px; }
+    nav ul li a:not(:last-child){ margin-bottom: 24px; }
+    nav ul li a .icon { width: 48px; height: 48px; font-size: 24px; }
+
+    header .p-inputtext { border-radius: 8px; min-width: 250px; padding: 10px 14px; }
+    .headerProfile li { font-size: 16px; }
+    .headerProfile li i { font-size: 18px; margin-right: 10px; }
+    .headerProfile li { margin-top: 15px; }
+
+    .backlog-icon, .inventory-icon, .backlogInventory, .booking { padding-right: 30px; }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 991px) {
+    
+}
